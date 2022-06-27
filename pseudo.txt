@@ -1,0 +1,21 @@
+Title Screen:
+    - Play intro Music
+    - Show a background
+    - If a key is pressed, move on to game
+
+Game:
+    - Play Music
+    - Constantly get mouse position for cursor, and display it
+        - cursor -> playsound, getinfo
+        - getinfo -> showinfo
+    - Display information about terrain/turns in the bottom right/left corners
+    - Wait for mouse presses
+        - If on a character, move/don't move them
+            - Move, attack
+        - mousepress -> charselect -> charmove
+    - When all units have moved, next turn and other color moves
+    - Display map, characters, and text 60 FPS
+
+End Screen:
+    - Play victory fanfare
+    - Show who won with appropriate colors
